@@ -1,0 +1,26 @@
+
+function destroyer(arr) {
+  // Remove all the values
+var a = Array.prototype.slice.call(arr);
+
+var x = a.length;
+var z= arr.length;
+
+var y= [];
+var value = 0;
+for (var i = 0; i<x;i++){
+
+value = a[i];
+
+  if (value !== arr[z-1] && value !== arr[z-2]){
+    y.push(value);
+  
+  }
+}
+
+
+  return console.log(y);
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+

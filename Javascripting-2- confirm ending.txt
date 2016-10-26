@@ -1,0 +1,13 @@
+
+function confirmEnding(str, target) {
+  
+  var len = str.length;
+  
+  if (str.substring(len-1) == target){
+      return console.log(str);
+  }
+
+}
+
+confirmEnding("Bastian", "n");
+

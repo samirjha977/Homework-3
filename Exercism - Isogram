@@ -1,0 +1,25 @@
+var word = function() {};
+
+word.prototype.isIsogram = function(input) {
+
+var sort = input.split('').sort();
+var count = 0;
+
+for (var i = 0; i<sort.length;i++){
+
+if (sort[i] === sort[i+1]) {
+   count++
+}
+}
+if (count > 0) {
+  return false;
+  console.log('f');
+} else {
+  return true;
+
+}
+
+};
+//isogram.prototype.word('word');
+module.exports = word;
+

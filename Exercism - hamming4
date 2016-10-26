@@ -1,0 +1,20 @@
+var hamming = function() {};
+
+hamming.prototype.compute = function(a,b) {
+  dna1 = a.split('');
+  dna2 = b.split('');
+  var count = 0;
+  if (dna1.length != dna2.length) {
+    return console.error();
+  }
+  else {
+    for (var i = 0; i<dna1.length; i++){
+      if (dna1[i]!== dna2[i]) {
+        count++
+      }
+    }
+    return count;
+  }
+}
+module.exports = hamming;
+

@@ -1,0 +1,20 @@
+var rnaTranscription = function() {};
+
+rnaTranscription.prototype.toRna = function(input) {
+var arrinput = input.split('');
+for (var i = 0; i<arrinput.length; i++) {
+if (arrinput[i] === 'G') {
+  arrinput.splice(i,0,'C');
+}else if (arrinput[i] === 'C') {
+  arrinput.splice(i,0,'G');
+}else if (arrinput[i] === 'T'){
+  arrinput.splice(i,0,'A');
+}else if (arrinput[i] === 'A') {
+  arrinput.splice(i,0,'U');
+}
+
+}
+  return arrinput;
+}
+module.exports = rnaTranscription;
+
